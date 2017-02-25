@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+}
+
+.main-background {
+  background:url('../img/main-bg.jpeg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.nav-control {
+  display: none;
+}
+
+.nav-btn-container {
+  width:50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* on Hover */
+.nav-btn-container:hover {
+  border: 2px solid blue;
+}
+
+.bar {
+  height:2px;
+  width: 20px;
+  background: white;
+}
+
+.fa-facebook {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.fa-twitter {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.main-text-container {
+  width:300px;
+  top:50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+  color: white;
+}
+
+.main-text-container h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.information-container {
+  height: 50px;
+  width: 50px;
+  bottom: 0;
+  margin: auto;
+  margin-top: 150px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.information-container span {
+  font-size: 36px;
+  color: gray;
+}
+
+/*on hover information-container*/
+.information-container:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.information-container span:hover {
+  color: blue;
+}
+/*on media query*/
+
+@media (min-width: 600px) {
+  .nav-btn-container {
+    display: none;
+  }
+
+  .nav-control {
+    display:inline-block;
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-control li {
+    list-style: none;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .fa {
+    display: none;
+  }
+  /* hover */
+
+  .nav-control li:hover {
+    color: blue;
+    cursor: pointer;
+  }
+}
